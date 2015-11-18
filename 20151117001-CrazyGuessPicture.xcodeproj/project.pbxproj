@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D54EED8F1BFB1976002CA739 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = D54EED8E1BFB1976002CA739 /* questions.plist */; };
 		D5ACE3F01BFB1555005A4A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACE3EF1BFB1555005A4A5F /* main.m */; };
 		D5ACE3F31BFB1555005A4A5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACE3F21BFB1555005A4A5F /* AppDelegate.m */; };
 		D5ACE3F61BFB1555005A4A5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACE3F51BFB1555005A4A5F /* ViewController.m */; };
 		D5ACE3F91BFB1555005A4A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5ACE3F71BFB1555005A4A5F /* Main.storyboard */; };
 		D5ACE3FB1BFB1555005A4A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5ACE3FA1BFB1555005A4A5F /* Assets.xcassets */; };
-		D5ACE3FE1BFB1555005A4A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5ACE3FC1BFB1555005A4A5F /* LaunchScreen.storyboard */; };
 		D5ACE4091BFB1556005A4A5F /* _0151117001_CrazyGuessPictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACE4081BFB1556005A4A5F /* _0151117001_CrazyGuessPictureTests.m */; };
 		D5ACE4141BFB1556005A4A5F /* _0151117001_CrazyGuessPictureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ACE4131BFB1556005A4A5F /* _0151117001_CrazyGuessPictureUITests.m */; };
 /* End PBXBuildFile section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D54EED8E1BFB1976002CA739 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
 		D5ACE3EB1BFB1555005A4A5F /* 20151117001-CrazyGuessPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20151117001-CrazyGuessPicture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5ACE3EF1BFB1555005A4A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5ACE3F11BFB1555005A4A5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		D5ACE3F51BFB1555005A4A5F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D5ACE3F81BFB1555005A4A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5ACE3FA1BFB1555005A4A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5ACE3FD1BFB1555005A4A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5ACE3FF1BFB1556005A4A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5ACE4041BFB1556005A4A5F /* 20151117001-CrazyGuessPictureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20151117001-CrazyGuessPictureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5ACE4081BFB1556005A4A5F /* _0151117001_CrazyGuessPictureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0151117001_CrazyGuessPictureTests.m; sourceTree = "<group>"; };
@@ -107,7 +107,6 @@
 				D5ACE3F51BFB1555005A4A5F /* ViewController.m */,
 				D5ACE3F71BFB1555005A4A5F /* Main.storyboard */,
 				D5ACE3FA1BFB1555005A4A5F /* Assets.xcassets */,
-				D5ACE3FC1BFB1555005A4A5F /* LaunchScreen.storyboard */,
 				D5ACE3FF1BFB1556005A4A5F /* Info.plist */,
 				D5ACE3EE1BFB1555005A4A5F /* Supporting Files */,
 			);
@@ -117,6 +116,7 @@
 		D5ACE3EE1BFB1555005A4A5F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D54EED8E1BFB1976002CA739 /* questions.plist */,
 				D5ACE3EF1BFB1555005A4A5F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -243,7 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5ACE3FE1BFB1555005A4A5F /* LaunchScreen.storyboard in Resources */,
+				D54EED8F1BFB1976002CA739 /* questions.plist in Resources */,
 				D5ACE3FB1BFB1555005A4A5F /* Assets.xcassets in Resources */,
 				D5ACE3F91BFB1555005A4A5F /* Main.storyboard in Resources */,
 			);
@@ -314,14 +314,6 @@
 				D5ACE3F81BFB1555005A4A5F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D5ACE3FC1BFB1555005A4A5F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5ACE3FD1BFB1555005A4A5F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "20151117001-CrazyGuessPicture/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainer.-0151117001-CrazyGuessPicture";
@@ -422,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "20151117001-CrazyGuessPicture/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rainer.-0151117001-CrazyGuessPicture";
@@ -496,6 +490,7 @@
 				D5ACE41A1BFB1556005A4A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5ACE41B1BFB1556005A4A5F /* Build configuration list for PBXNativeTarget "20151117001-CrazyGuessPictureTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +499,7 @@
 				D5ACE41D1BFB1556005A4A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5ACE41E1BFB1556005A4A5F /* Build configuration list for PBXNativeTarget "20151117001-CrazyGuessPictureUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +508,7 @@
 				D5ACE4201BFB1556005A4A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
