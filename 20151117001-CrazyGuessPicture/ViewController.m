@@ -26,21 +26,35 @@
 
 @implementation ViewController
 
+#pragma mark - 控制器加载
+/**
+ *  控制器试图加载事件
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     NSLog(@"%@",[QuestionsModel questionArray]);
 }
 
+/**
+ *  设置状态栏样式
+ */
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 
+#pragma mark - 
+
+#pragma mark - 按钮监听事件
+/**
+ *  大图小图切换
+ */
 - (IBAction)changePicture:(id)sender {
     if (0.0 == self.coverButton.alpha) {
         // 1.将图像调至试图最前端
         [self.view bringSubviewToFront:self.pictureButton];
         
+        // 2.调整图片位置大小
         CGFloat pictureButtonW = self.view.bounds.size.width;
         CGFloat pictureButtonH = pictureButtonW;
         CGFloat pictureButtonX = 0;
@@ -51,6 +65,7 @@
             self.pictureButton.frame = CGRectMake(pictureButtonX, pictureButtonY, pictureButtonW, pictureButtonH);
         }];
     } else {
+        // 2.调整图片位置大小
         [UIView animateWithDuration:1.0 animations:^{
             self.coverButton.alpha = 0.0;
             self.pictureButton.frame = CGRectMake(85, 98, 150, 150);
@@ -76,6 +91,21 @@
     return _coverButton;
 }
 
+/**
+ *  数据列表懒加载
+ */
+- (NSArray *)questions {
+    if (nil == _questions) {
+        _questions = [QuestionsModel questionArray];
+    }
+    
+    return _questions;
+}
+
+#pragma mark - 内存管理
+/**
+ *  内存泄漏处理方法
+ */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 

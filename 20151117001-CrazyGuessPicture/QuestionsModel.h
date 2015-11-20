@@ -15,11 +15,24 @@
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) NSArray *options;
 
+/**
+ *  通过字典初始化该实体类（对象方法）
+ */
 - (instancetype)initWithDictionary:(NSDictionary *) dictionary;
 
+/**
+ *  通过字典初始化该实体类（类方法）
+ */
 + (instancetype)questionsWithDictionary:(NSDictionary *)dictionary;
 
+/**
+ *  获取对象列表数据（对象方法）
+ */
 - (NSArray *)questionArray;
+
+/**
+ *  获取对象列表数据（类方法）
+ */
 + (NSArray *)questionArray;
 
 @end
