@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,15 +26,6 @@
                                 <color key="textColor" red="0.98242535050000002" green="1" blue="0.9893528265" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sjz-Ud-PaL">
-                                <rect key="frame" x="237" y="20" width="83" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="100000" image="coin">
-                                    <color key="titleColor" red="0.98242535050000002" green="1" blue="0.9893528265" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恶搞喜剧大片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2x2-Cs-prS">
                                 <rect key="frame" x="0.0" y="50" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,6 +41,9 @@
                                 <state key="normal" title="提示" image="icon_tip" backgroundImage="btn_left">
                                     <color key="titleColor" red="0.98242535050000002" green="1" blue="0.9893528265" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tipButtonClickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qgo-aE-aaa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oV0-6r-QMl">
                                 <rect key="frame" x="250" y="116" width="70" height="36"/>
@@ -69,6 +63,9 @@
                                 <state key="normal" title="下一题" backgroundImage="btn_right">
                                     <color key="titleColor" red="0.98242535050000002" green="1" blue="0.9893528265" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextQuestionButtonClickAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gjk-Yx-Fzo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VZV-Af-XKV">
                                 <rect key="frame" x="0.0" y="178" width="70" height="36"/>
@@ -78,17 +75,11 @@
                                     <color key="titleColor" red="0.98242535050000002" green="1" blue="0.9893528265" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" id="7Lw-U1-36n">
-                                <rect key="frame" x="0.0" y="256" width="320" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" id="FIL-2u-y7S">
-                                <rect key="frame" x="0.0" y="302" width="320" height="178"/>
+                                <rect key="frame" x="0.0" y="306" width="320" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dTg-pz-hD8">
                                 <rect key="frame" x="85" y="98" width="150" height="150"/>
@@ -100,23 +91,38 @@
                                     <action selector="changePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIT-PQ-UCU"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="7Lw-U1-36n">
+                                <rect key="frame" x="0.0" y="263" width="320" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sjz-Ud-PaL">
+                                <rect key="frame" x="237" y="20" width="83" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="100000" image="coin">
+                                    <color key="titleColor" red="0.98242535050000002" green="1" blue="0.9893528265" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="coinButton" destination="8bC-Xf-vdC" id="Kse-z2-VZ6"/>
-                        <outlet property="countLabel" destination="8bC-Xf-vdC" id="QTB-w4-89d"/>
-                        <outlet property="descriptionLabel" destination="8bC-Xf-vdC" id="Ld3-oq-gyC"/>
+                        <outlet property="coinButton" destination="sjz-Ud-PaL" id="87o-58-sEW"/>
+                        <outlet property="countLabel" destination="Ajk-7T-jg9" id="Wjb-fz-KEe"/>
+                        <outlet property="descriptionLabel" destination="2x2-Cs-prS" id="NSj-ja-S0T"/>
                         <outlet property="pictureButton" destination="dTg-pz-hD8" id="TjA-4N-81H"/>
                         <outlet property="selectAnswerView" destination="FIL-2u-y7S" id="JLw-Hw-wPT"/>
-                        <outlet property="trueAnswerView" destination="8bC-Xf-vdC" id="8bZ-Tk-NhB"/>
+                        <outlet property="trueAnswerView" destination="7Lw-U1-36n" id="6oN-DX-xs2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217.59999999999999" y="292.51999999999998"/>
+            <point key="canvasLocation" x="217" y="292"/>
         </scene>
     </scenes>
     <resources>

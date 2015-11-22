@@ -9,12 +9,13 @@
 #import "QuestionsModel.h"
 
 @implementation QuestionsModel
-
 /**
  *  通过字典初始化该实体类（对象方法）
  */
-- (instancetype)initWithDictionary:(NSDictionary *) dictionary {
-    if (self = [super init]) {
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    
+    if (self) {
         [self setValuesForKeysWithDictionary:dictionary];
     }
     
@@ -32,13 +33,12 @@
  *  获取对象列表数据（对象方法）
  */
 - (NSArray *)questionArray {
-    NSString *questionPath = [[NSBundle mainBundle] pathForResource:@"questions" ofType:@"plist"];
-    NSArray *questions = [NSArray arrayWithContentsOfFile:questionPath];
+    NSArray *questions = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"questions" ofType:@"plist"]];
     
     NSMutableArray *questionArray = [NSMutableArray array];
     
     for (NSDictionary *dictionary in questions) {
-        [questionArray addObject:[self initWithDictionary:dictionary]];
+        [questionArray addObject:[QuestionsModel questionsWithDictionary:dictionary]];
     }
     
     return questionArray;
@@ -48,7 +48,7 @@
  *  获取对象列表数据（类方法）
  */
 + (NSArray *)questionArray {
-    return [[QuestionsModel alloc] questionArray];
+    return [[self alloc] questionArray];
 }
 
 /**

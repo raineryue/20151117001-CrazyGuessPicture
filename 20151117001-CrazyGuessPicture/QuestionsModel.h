@@ -18,7 +18,7 @@
 /**
  *  通过字典初始化该实体类（对象方法）
  */
-- (instancetype)initWithDictionary:(NSDictionary *) dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 /**
  *  通过字典初始化该实体类（类方法）
