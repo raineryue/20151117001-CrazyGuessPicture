@@ -186,7 +186,11 @@
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"恭喜您通关了！" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-        
+            // 1.初始化题目索引
+            self.index = -1;
+            
+            // 2.初始化当前题目
+            [self nextQuestionButtonClickAction];
         }];
         
         [alertController addAction:okAction];
