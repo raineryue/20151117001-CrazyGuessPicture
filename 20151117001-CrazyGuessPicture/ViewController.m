@@ -65,7 +65,7 @@
     self.descriptionLabel.text = questionModel.title;
     
     // 3.设置当前图片
-    [self.pictureButton setImage:[UIImage imageNamed:questionModel.icon] forState:UIControlStateNormal];
+    [self.pictureButton setImage:questionModel.iconImage forState:UIControlStateNormal];
 }
 
 /**
@@ -183,7 +183,14 @@
     self.index++;
     
     if (self.questions.count <= self.index) {
-        NSLog(@"恭喜您通关了！");
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"恭喜您通关了！" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        
+        }];
+        
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
         
         return;
     }

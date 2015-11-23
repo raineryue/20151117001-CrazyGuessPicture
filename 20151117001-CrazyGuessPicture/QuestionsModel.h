@@ -6,6 +6,7 @@
 //  Copyright © 2015年 Rainer. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 @interface QuestionsModel : NSObject
@@ -14,6 +15,7 @@
 @property (nonatomic, copy) NSString *icon;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) NSArray *options;
+@property (nonatomic, strong) UIImage *iconImage;
 
 /**
  *  通过字典初始化该实体类（对象方法）
